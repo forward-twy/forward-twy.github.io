@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>tcp-ip协议族 | forward</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="http协议相关协议">
+<meta property="og:type" content="article">
+<meta property="og:title" content="tcp-ip协议族">
+<meta property="og:url" content="http://m.tongwangyuan.com/2019/04/11/tcp-ip%E5%8D%8F%E8%AE%AE%E6%97%8F/index.html">
+<meta property="og:site_name" content="forward">
+<meta property="og:description" content="http协议相关协议">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://m.tongwangyuan.com/2019/04/11/tcp-ip%E5%8D%8F%E8%AE%AE%E6%97%8F/one-net-request.jpg">
+<meta property="og:image" content="http://m.tongwangyuan.com/2019/04/11/tcp-ip%E5%8D%8F%E8%AE%AE%E6%97%8F/three-way-handshaking.jpg">
+<meta property="og:image" content="http://m.tongwangyuan.com/2019/04/11/tcp-ip%E5%8D%8F%E8%AE%AE%E6%97%8F/http-request.jpg">
+<meta property="article:published_time" content="2019-04-11T00:26:01.000Z">
+<meta property="article:modified_time" content="2020-06-15T06:58:34.137Z">
+<meta property="article:author" content="forward">
+<meta property="article:tag" content="http">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://m.tongwangyuan.com/2019/04/11/tcp-ip%E5%8D%8F%E8%AE%AE%E6%97%8F/one-net-request.jpg">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 4.2.1"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">forward</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">青山常在</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        <!-- 
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+         -->
+          <a class="main-nav-link" href="/">首页</a>
+          <a class="main-nav-link" href="/archives">归档</a>
+      </nav>
+      <nav id="sub-nav">
+        
+        <!-- <a id="nav-search-btn" class="nav-icon" title="搜索"></a> -->
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://m.tongwangyuan.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-tcp-ip协议族" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/04/11/tcp-ip%E5%8D%8F%E8%AE%AE%E6%97%8F/" class="article-date">
+  <time datetime="2019-04-11T00:26:01.000Z" itemprop="datePublished">2019-04-11</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      tcp-ip协议族
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="TCP-IP协议族"><a href="#TCP-IP协议族" class="headerlink" title="TCP/IP协议族"></a>TCP/IP协议族</h2><p> 通常使用的网络（包括互联网）是在TCP/IP协议族的基础上运作的，而HTTP属于它内部的一个子集。<br> 包括的协议有：IP、DNS、FTP、HTTP、UDP、TCP、SNMP、等多种协议</p>
+<h2 id="TCP-IP的分层管理"><a href="#TCP-IP的分层管理" class="headerlink" title="TCP/IP的分层管理"></a>TCP/IP的分层管理</h2><p>  TCP/IP协议族里面最重要的一点就是分层。TCP/IP按层次分别分为四层：应用层，传输层，网络层，数据链路层。</p>
+<h3 id="应用层："><a href="#应用层：" class="headerlink" title="应用层："></a>应用层：</h3><p>   TCP/IP协议族内预存了各类通用的应用服务。比如，FTP（文件传输协议）和DNS（Domin Name System，域名系统）服务就是其中的两类。HTTP协议也属于该层。</p>
+<h3 id="传输层"><a href="#传输层" class="headerlink" title="传输层"></a>传输层</h3><p>   传输层对上层应用层，提供处于网络连接中的两台计算机之间的数据传输。在传输层有两个性质不同的协议：TCP（transmission control protocol，传输控制协议）和UDP（User Data Protocol，用户数据报协议）</p>
+<h3 id="网络层"><a href="#网络层" class="headerlink" title="网络层"></a>网络层</h3><p>  网络层用来处理在网络上流动的数据包。数据包是网络上传输的最小数据单位。该层规定了通过怎样的路径（所谓的传输路线）到达对方计算机，并把数据包传送给对方。<br>  与对方计算机之间通过多台计算机或网络设备进行传输时，网络层所起的作用就是在众多的选项内选择一条传输线路。</p>
+<h3 id="链路层（又称网络接口层）"><a href="#链路层（又称网络接口层）" class="headerlink" title="链路层（又称网络接口层）"></a>链路层（又称网络接口层）</h3><p>  用来处理连接网络的硬件部分。包括控制操作系统、硬件的设备驱动、NIC（网络适配器，即网卡），及光纤等物理可见部分。硬件上的范畴均在链路层的作用范围之内。这一层也是软件层面很少接触到的层面。</p>
+<p><img src="./one-net-request.jpg" alt="one-net-request.jpg"></p>
+<pre><code>需要注意的是：信息经过每一层时，都会加上该层的头部内容，最终形成完整的报文。</code></pre><h2 id="与HTTP关系密切的协议：IP、TCP和DNS"><a href="#与HTTP关系密切的协议：IP、TCP和DNS" class="headerlink" title="与HTTP关系密切的协议：IP、TCP和DNS"></a>与HTTP关系密切的协议：IP、TCP和DNS</h2><h3 id="复杂域名解析的DNS服务"><a href="#复杂域名解析的DNS服务" class="headerlink" title="复杂域名解析的DNS服务"></a>复杂域名解析的DNS服务</h3><p>   DNS也是应用层协议，服务提供域名到IP地址之间的解析服务。由于计算机之间的通信是通过IP来寻址的（本质上是通过mac地址，IP地址可变，而mac地址不可变）而用户一般只记住域名的，为了方便用户的记忆，所以DNS应用而生。</p>
+<h3 id="确保可靠性的TCP协议"><a href="#确保可靠性的TCP协议" class="headerlink" title="确保可靠性的TCP协议"></a>确保可靠性的TCP协议</h3><p>   按层次分，TCP位于传输层，提供可靠的字节流服务。所谓的字节流服务是指，为了方便传输，将大块数据分割成以报文段为单位的数据包进行管理。TCP协议为了更容易传送大数据才把数据分割，而且TCP协议能够确认数据是否传送给对方。</p>
+<h4 id="三次握手"><a href="#三次握手" class="headerlink" title="三次握手"></a>三次握手</h4><p>为了确保准确无误的将数据传送给对方，TCP协议采用了三次握手策略。用tcp协议把数据包送出去后，TCP不会对传送后的情况置之不理，它一定会向对方确认是否成功送达。握手过程中使用了TCP的标志–SYN（synchronize）和ACK（acknowledgement)。</p>
+<p><img src="./three-way-handshaking.jpg" alt="three-way-handshaking.jpg"></p>
+<h3 id="负责传输的IP协议"><a href="#负责传输的IP协议" class="headerlink" title="负责传输的IP协议"></a>负责传输的IP协议</h3><p>  IP协议位于网络层，负责把各种数据包传送给对方。要确保发送到对方那里，其中重要的两个条件是IP地址和MAC地址。IP地址指明了节点被分配到的地址，MAC地址是指网卡所属的固定地址。IP地址可以和MAC地址配对，IP地址可变换，但MAC地址基本不会变化。<br>  负责根据通信方IP地址解析出MAC地址的协议叫做ARP（address resolution Protocol）。毫无疑问，ARP协议置管重要。</p>
+<h3 id="一次网络请求过程"><a href="#一次网络请求过程" class="headerlink" title="一次网络请求过程"></a>一次网络请求过程</h3><p><img src="./http-request.jpg" alt="three-way-handshaking.jpg"></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <!-- <a data-url="http://m.tongwangyuan.com/2019/04/11/tcp-ip%E5%8D%8F%E8%AE%AE%E6%97%8F/" data-id="ckbg5d8rl0000osaz3jjrd58n" class="article-share-link">Share</a> -->
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/http/" rel="tag">http</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/http/" rel="tag">http</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签云</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/http/" style="font-size: 10px;">http</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">归档</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/04/">四月 2019</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2019/04/11/tcp-ip%E5%8D%8F%E8%AE%AE%E6%97%8F/">tcp-ip协议族</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2020 forward<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script> -->
+<script src="js/jquery.min.js"></script>
+
+
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+  </div>
+</body>
+</html>
